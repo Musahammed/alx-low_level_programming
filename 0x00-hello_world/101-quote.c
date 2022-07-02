@@ -8,6 +8,6 @@
 
 int main(void)
 {
-	Write("and that piece of art is useful\" - Dore Korpar, 2015 - 10 -19\n");
+	printf("and that piece of art is useful\" - Dore Korpar, 2015 - 10 -19\n");
 	return (1);
 }
