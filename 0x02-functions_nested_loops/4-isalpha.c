@@ -1,13 +1,12 @@
 #include "main.h"
 
 /**
-  _isalpha - Checks if character is uppercase
+ * is_isalpha - Checks if character is uppercase
  *
  * @c: param to be tested
  *
  * Return: 1 if @c is alphabet, otherwise 0
- *
- **/
+ */
 int _isalpha(int c)
 {
 if (c >= 'a' && c <= 'z')
