@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  *
  * _islower - checks if char is lower

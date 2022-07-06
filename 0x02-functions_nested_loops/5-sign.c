@@ -1,6 +1,6 @@
 #include "main.h"
+
 /**
- *
  * print_sign - function to check for a sign of a number
  *
  * @n: parameter of function _print_sign to be tested
