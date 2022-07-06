@@ -1,13 +1,9 @@
 #include "main.h"
-
-
-
 /**
  *
  * _isalpha - Checks if character is uppercase
  *
  * @c: param to be tested
- *
  *
  * Return: 1 if @c is alphabet, otherwise 0
  *
