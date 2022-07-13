@@ -19,7 +19,7 @@ for (i = 0; i < length1; i++)
 {
 tmp = s[i];
 s[i] = s[length2];
-s[length2 = tmp;
+s[length2] = tmp;
 length2 -= 1;
 }
 }
