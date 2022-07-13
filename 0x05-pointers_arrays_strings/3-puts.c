@@ -1,8 +1,15 @@
 #include "main.h"
 /**
- * _puts: print a string
- * @str: A pointer that will be changed
- *
- * Return: void which means our answer is correct
+ * _puts -> function that put
+ * @str:a param to _puts function
  */
-
+void _puts(char *str)
+{
+for (; *str != '\0' str++)
+{
+_putchar(*str);
+}
+{
+_putchar('\n');
+}
+}
