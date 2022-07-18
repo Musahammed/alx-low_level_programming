@@ -1,5 +1,5 @@
 #include "main.h"
-#include <string.h>
+
 /**
  * _memset - function of memory set
  * @b: 1st param
