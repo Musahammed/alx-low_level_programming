@@ -2,7 +2,7 @@
 
 /**
  * _strspn - function that get a lengths of substring
- * @s:  source string 
+ * @s: source string 
  * @accept: accept string
  * Return: number of bytes in init segment
  */
