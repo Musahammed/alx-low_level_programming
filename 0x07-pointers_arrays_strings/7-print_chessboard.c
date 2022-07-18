@@ -2,15 +2,19 @@
 
 /**
  * print_chessboard - print chessboard
- * Return: 0
+ * @a: array of pieces
+ *
+ * Return: nothing
  */
 void print_chessboard(char (*a)[8])
 {
-int a = [8], x = &a;
+int b, c;
 
-_putchar("%d", &x);
+for (b = 0; b < 8; b++)
 {
-_putchar('\0'/n);
+for (c = 0; c < 8; c++)
+{
+_putchar(a[b][c]);
 }
-return (0);
+_putchar('\n');
 }
