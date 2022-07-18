@@ -2,22 +2,19 @@
 
 /**
  * _strchr - function of string character
- * @s: 1st param
- * @c: 2nd param
- * Return: return the string from character found
+ * @s: string character
+ * @c: another char
+ * Return: string from character found
  */
 char *_strchr(char *s, char c)
 {
 int a = 0, b;
 while (s[a])
-{
-a++
-}
-for ( b = 0; b <= a: b++)
+a++;
+
+for (b = 0; b <= a; b++)
 {
 if (c == s[b])
-}
-{
 s =+ b;
 return (s);
 }
