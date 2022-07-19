@@ -2,18 +2,22 @@
 #include <stdio.h>
 /**
  * print_diagsums
- * @a: the matrix
+ * @a: pointer
  * @size: the size
  * Return: nothing
  */
 void print_diagsums(int *a, int size)
 {
-int b, sum1 = 0, sum2 = 0;
+int i, sum1 = 0, sum2 = 0;
 
-for (b = 0; b < size; b++)
+for (i = 0; i < size; i++)
 {
-sum1 += a[(size + 1) * b];
-sum2 += a[(size - 1) * (b + 1)];
+sum1 += *(a + (size * i + i));
+
+sum2 += *(a + (size * i + size - 1 - i));
 }
-printf("%d, %d\n", sun1, sum2);
+printf("%d, ", sum1);
+printf("%d\n", sum2);
 }
+
+
