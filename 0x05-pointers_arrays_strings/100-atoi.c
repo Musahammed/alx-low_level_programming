@@ -31,7 +31,7 @@ else
 
 return (INT_MIN);
 }
-base = 10 * base + (str[i++] - '0');
+base = 10 *base + (str[i++] - '0');
 }
 return (base * sign);
 }
