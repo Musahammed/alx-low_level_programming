@@ -1,40 +1,37 @@
 #include <stdio.h>
-#define stopVar 100
 
 /**
- * main - main function
- * checks through numbers from 1 - 100
- * Return: 0 if successful
+ * main - check the code for Holberton School students.
+ * Return: void.
  */
 int main(void)
 {
-int ii = 1;
+int i = 1;
 
-do
+while (i <= 100)
 {
-if ((ii % 3 == 0) && (ii % 5 == 0))
-
+if (i % 3 == 0 && i % 5 == 0)
+{
 printf("FizzBuzz");
-
-else if (ii % 3 == 0)
-
-printf("Fizz");
-
-else if (ii % 5 == 0)
-
-printf("Buzz");
-
-else
-
-printf("%d", ii);
-
-if (ii != stopVar)
-
-printf(" ");
-ii++;
 }
-while (ii < stopVar + 1);
-printf("\n");
-
+else if (i % 3 == 0)
+{
+printf("Fizz");
+}
+else if (i % 5 == 0)
+{
+printf("Buzz");
+}
+else
+{
+printf("%i", i);
+}
+if (i != 100)
+{
+putchar(' ');
+}
+i++;
+}
+putchar('\n');
 return (0);
 }

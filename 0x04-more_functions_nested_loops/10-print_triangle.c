@@ -1,37 +1,35 @@
 #include "main.h"
 
 /**
- * print_triangle - print triangle with size var
- * @var: size of triangle to print
+ * print_triangle - check for a digit
+ * @size : integer type
+ * Return:void
  */
-void print_triangle(int var)
+void print_triangle(int size)
 {
-if (var < 1)
+int i = 1, ii;
 
-_putchar('\n');
-
-else
+while (i <= size && size > 0)
 {
-int size = 1;
+ii = 0;
 
-do
+while (ii < size - i)
 {
-int ii;
+_putchar(' ');
 
-for (ii = 1; ii <= var; ii++)
+ii++;
+}
+ii = 0;
+
+while (ii < i)
 {
-if (ii > (var - size))
-
 _putchar('#');
-
-else
-
-_putchar(' ')
+ii++;
 }
 _putchar('\n');
+i++;
+}
+if (i == 1)
 
-size++;
-}
-while (size <= var);
-}
+_putchar('\n');
 }
