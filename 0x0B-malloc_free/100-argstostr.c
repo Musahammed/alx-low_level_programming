@@ -1,45 +1,48 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
- * argstostr - prints args
- * @ac: takes in width of grid
- * @av: height of grid
- * Return: the args one line at a time
+ * argstostr - concatenates all the arguments of a program.
+ * @ac: argument count.
+ * @av: argument vector.
+ * Return: pointer of an array of char
  */
 char *argstostr(int ac, char **av)
 {
-char *str;
-int count = 0, a = 0, b = 0, c = 0;
+char *aout;
+int c, i, j, ia;
 
-if (ac == 0 || av == NULL)
+if (ac == 0)
 return (NULL);
 
-while (a < ac)
+for (c = i = 0; i < ac; i++)
 {
-b = 0;
+if (av[i] == NULL)
+return (NULL);
+for (j = 0; av[i][j] != '\0'; j++)
+c++;
+c++;
+}
+aout = malloc((c + 1) * sizeof(char));
 
-while (av[a][b] != '\0')
+if (aout == NULL)
 {
-count++;
-b++;
-}
-a++;
-}
-count = count + ac + 1;
-str = malloc(sizeof(char) * count);
-if (str == NULL)
-{
+free(aout);
 return (NULL);
 }
-for (a = 0; a < ac; a++)
+for (i = j = ia = 0; ia < c; j++, ia++)
 {
-for (b = 0; av[a][b] != '\0'; b++)
+if (av[i][j] == '\0')
 {
-str[c] = av[a][b];
-c++;
+aout[ia] = '\n';
+i++;
+ia++;
+j = 0;
 }
-str[c] = '\n';
-c++;
+if (ia < c - 1)
+
+aout[ia] = av[i][j];
 }
-return (str);
+aout[ia] = '\0';
+return (aout);
 }
